@@ -1,16 +1,13 @@
 {
-  "name": "express",
+  "name": "aicontentforge-backend",
   "version": "1.0.0",
-  "description": "",
-  "type": "module",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@types/express": "^5.0.0",
-    "express": "^4.18.2"
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
   },
-  "devDependencies": {
-    "@types/node": "^22.0.0"
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^2.6.7",
+    "cors": "^2.8.5"
   }
 }
