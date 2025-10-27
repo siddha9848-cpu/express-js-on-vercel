@@ -7,8 +7,8 @@ const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json({ limit: '1mb' }));
 
-const HF_API_KEY = process.env.HF_API_KEY; // required
-if(!HF_API_KEY){
+const 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 = process.env.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; // required
+if(!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){
   console.warn('Warning: HF_API_KEY not set. The server will return error when used.');
 }
 
@@ -152,3 +152,4 @@ app.get('/', (req,res)=> res.send('AIContentForge backend is running. POST /gene
 // Start server (for local testing or hosts that use port env)
 const port = process.env.PORT || 3000;
 app.listen(port, ()=> console.log('Server listening on port', port));
+
